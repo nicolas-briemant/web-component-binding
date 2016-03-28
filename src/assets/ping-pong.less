@@ -1,0 +1,32 @@
+@backgroundColor: #A5ECFA;
+@mainColor: #45828E;
+@sideColor: #39AEC6;
+@fontSizeBase: 20px;
+
+body {
+  margin: 0;
+}
+
+.ping-pong {
+  font-family: '"Helvetica Neue", "Arial", sans-serif';
+  background-color: @backgroundColor;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.ping {
+  width: 25%;
+}
+.ping__input {}
+.ping__button {}
+.ping__message {}
+
+.pong {
+  width: 25%;
+}
+.pong__message {
+  color: @mainColor;
+  font-size: @fontSizeBase;
+}
