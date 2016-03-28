@@ -17,16 +17,20 @@ body {
 }
 
 .ping {
-  width: 25%;
+  border: 1px solid @sideColor;
+  margin: 20px;
+  padding: 20px;
 }
 .ping__input {}
 .ping__button {}
-.ping__message {}
-
-.pong {
-  width: 25%;
-}
-.pong__message {
+.ping__message {
   color: @mainColor;
   font-size: @fontSizeBase;
+}
+
+.pong {
+  .ping();
+}
+.pong__message {
+  .ping__message();
 }

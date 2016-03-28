@@ -7,14 +7,17 @@ import ping from './ping';
 import pong from './pong';
 
 const gonp = pong();
+const Gonp = gonp.App;
 const Ping = ping(gonp.setMessageHandler);
+const Gimp = ping();
 const Pong = pong().App;
 
 const App = () => {
   return (
     <div className="ping-pong">
       <Ping />
-      <gonp.App />
+      <Gimp />
+      <Gonp />
       <Pong />
     </div>
   );
